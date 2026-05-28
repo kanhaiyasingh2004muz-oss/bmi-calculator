@@ -6,7 +6,7 @@
 }
 
 body{
-    background:#f0f2f5;
+    background:#eea8f3;
     min-height:100vh;
     display:flex;
     justify-content:center;
@@ -39,14 +39,14 @@ body{
 .history-box,
 .suggestion-box{
 
-    background:white;
+    background:rgb(230, 149, 149);
 
     padding:25px;
 
     border-radius:20px;
 
     box-shadow:
-    0 5px 15px rgba(0,0,0,0.1);
+    0 5px 15px rgba(210, 106, 106, 0.1);
 }
 
 /* BMI BOX */
@@ -145,7 +145,7 @@ button{
 
     border-radius:12px;
 
-    background:black;
+    background:rgb(49, 5, 5);
 
     color:white;
 

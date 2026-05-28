@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f0f2f5;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* MAIN GRID */
+
+.main-container{
+
+    width:100%;
+    max-width:1400px;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr 1fr;
+
+    grid-template-rows:
+    auto auto;
+
+    gap:25px;
+}
+
+/* COMMON BOX STYLE */
+
+.bmi-box,
+.chart-box,
+.history-box,
+.suggestion-box{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* BMI BOX */
+
+.bmi-box{
+
+    grid-column:1;
+    grid-row:1 / 3;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+/* CHART BOX */
+
+.chart-box{
+
+    grid-column:2;
+    grid-row:1;
+
+    text-align:center;
+}
+
+/* HISTORY BOX */
+
+.history-box{
+
+    grid-column:3;
+    grid-row:1;
+
+    overflow-y:auto;
+    max-height:350px;
+}
+
+/* SUGGESTION BOX */
+
+.suggestion-box{
+
+    grid-column:3;
+    grid-row:2;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+/* TITLES */
+
+h1,h2,h3{
+
+    margin-bottom:15px;
+}
+
+/* INPUTS */
+
+input{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:12px;
+
+    border-radius:12px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
+}
+
+/* GENDER */
+
+.gender-box{
+
+    margin-top:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+}
+
+/* BUTTON */
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:20px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:black;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+
+    opacity:0.85;
+}
+
+/* RESULT */
+
+#result,
+#status{
+
+    margin-top:18px;
+
+    text-align:center;
+}
+
+/* SUGGESTION */
+
+#suggestion{
+
+    font-size:17px;
+
+    line-height:1.6;
+}
+
+/* HISTORY */
+
+#history{
+
+    margin-top:15px;
+
+    padding-left:20px;
+}
+
+#history li{
+
+    margin-bottom:12px;
+
+    line-height:1.5;
+}
+
+/* CHART TEXT */
+
+.chart-box p{
+
+    margin-top:10px;
+
+    font-size:16px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:1000px){
+
+    .main-container{
+
+        grid-template-columns:1fr;
+    }
+
+    .bmi-box,
+    .chart-box,
+    .history-box,
+    .suggestion-box{
+
+        grid-column:auto;
+        grid-row:auto;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="main-container">
+
+    <!-- LEFT CENTER -->
+    <div class="bmi-box">
+
+        <h1>BMI Calculator</h1>
+
+        <input type="number" id="age" placeholder="Enter age">
+
+        <input type="number" id="weight" placeholder="Enter weight in kg">
+
+        <input type="number" id="height" placeholder="Enter height in meter">
+
+        <div class="gender-box">
+
+            <label>
+                <input type="radio" name="gender" value="Male">
+                Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="Female">
+                Female
+            </label>
+
+        </div>
+
+        <button onclick="calculateBMI()">
+            Calculate BMI
+        </button>
+
+        <h2 id="result"></h2>
+
+        <h3 id="status"></h3>
+
+    </div>
+
+    <!-- TOP CENTER -->
+    <div class="chart-box">
+
+        <h2>BMI Chart</h2>
+
+        <p>Underweight = Below 18.5</p>
+        <p>Normal = 18.5 - 24.9</p>
+        <p>Overweight = 25 - 29.9</p>
+        <p>Obese = 30 and above</p>
+
+    </div>
+
+    <!-- RIGHT CENTER -->
+    <div class="suggestion-box">
+
+        <h2>Health Suggestion</h2>
+
+        <p id="suggestion"></p>
+
+    </div>
+
+    <!-- RIGHT TOP -->
+    <div class="history-box">
+
+        <h2>History</h2>
+
+        <button onclick="clearHistory()">
+            Delete History
+        </button>
+
+        <ul id="history"></ul>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
